@@ -1,39 +1,45 @@
 import './App.css';
 import { TonConnectButton } from '@tonconnect/ui-react';
+import './Header.jsx'
+
 
 function App() {
     return (
         <div className="App">
-           <header className="header">
-               <nav className="nav-links">
-                   <a href="#donate-section">Donate</a>
-                   <a href="#donation-info-section">Donation Information</a>
-                   <a href="#about-us-section">About Us</a>
-                   <a href="#contact-us-section">Contact Us</a>
-                   <TonConnectButton />
-               </nav>
+
+            <header className="header">
+                <nav className="nav-links">
+                    <img src="./images/Logo_Bot.svg" alt="logo" className="header-icon"></img>
+                    <a href="#donate-section">Donate</a>
+                    <a href="#donation-info-section">Donation Information</a>
+                    <a href="#about-us-section">About Us</a>
+                    <a href="#contact-us-section">Contact Us</a>
+                    <TonConnectButton />
+                </nav>
 
 
-           </header>
+            </header>
 
             <section id="donate-section" className="donate-section">
-                <button className="donate-button">Donate</button>
-            </section>
+               <div className="donate-image-overlay">
+                                       <button className="donate-button">Donate</button>
+               </div>
+               </section>
 
             <section id="donation-info-section" className="donation-info-section">
                 <h2>This donation will help:</h2>
                 <ul>
                     <li>Provide emergency medical supplies to areas affected by natural disasters</li>
                     <li>Support clean water initiatives in communities facing water scarcity.</li>
-                <li>Deliver food aid to regions suffering from famine or food insecurity.</li>
-                <li>Offer shelter and essential supplies to displaced families during conflicts.</li>
-                <li>Empower education programs for underprivileged children to break the cycle of poverty.</li>
-                <li>Contribute to environmental conservation efforts and reforestation projects.</li>
-                <li>Assist animal rescue organizations in rescuing and rehabilitating animals in need.</li>
-                <li>Support mental health services for communities affected by traumatic events.</li>
+                    <li>Deliver food aid to regions suffering from famine or food insecurity.</li>
+                    <li>Offer shelter and essential supplies to displaced families during conflicts.</li>
+                    <li>Empower education programs for underprivileged children to break the cycle of poverty.</li>
+                    <li>Contribute to environmental conservation efforts and reforestation projects.</li>
+                    <li>Assist animal rescue organizations in rescuing and rehabilitating animals in need.</li>
+                    <li>Support mental health services for communities affected by traumatic events.</li>
                 </ul>
             </section>
-            <section id="about-us-selection" className="about-us-section">
+            <section id="about-us-section" className="about-us-section">
                 <h2>About Us</h2>
                 <p>Welcome to our Mobile Charity platform, powered by TON technology, where you can make a tangible difference with just a few taps on your phone. We believe that every act of kindness, no matter how small, has the potential to transform lives and communities.
 
